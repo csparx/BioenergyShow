@@ -8,3 +8,102 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bioenergyshow
 */
+
+/**
+* Foundation Classes
+*/
+body{
+  margin: 0px;
+}
+.top-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 5px 10px;
+}
+.dark-bg{
+  background-color: #363636;
+}
+.primary-bg{
+  background-color: #007336;
+}
+.center-items{
+  justify-content: center;
+}
+
+/**
+* Header Classes
+*/
+.social-icon{
+  margin: 0px 5px;
+}
+#top-menu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+#top-menu li{
+  position: relative;
+}
+.menu-pages-container{
+  display: flex;
+  height: 50px;
+}
+.menu-item{
+  list-style-type: none;
+  margin: 0px 10px;
+}
+.sub-menu{
+  display: none;
+}
+.menu-item-has-children:hover .sub-menu{
+  display: flex;
+  flex-direction: column;
+  background: #363636;
+  padding: 0px;
+  position: absolute;
+  min-width: 150px;
+}
+.menu-item-has-children:hover .sub-menu > li{
+  margin: 5px 0px;
+  height: 35px;
+  display: table;
+  width: 100%;
+}
+.menu-item-has-children:hover .sub-menu > li a{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 10px;
+}
+.menu-item-has-children:hover .sub-menu > li > ul{
+  display: none;
+}
+.menu-item-has-children:hover .sub-menu > li:hover > ul{
+  display: block;
+  background: #363636;
+  position: absolute;
+  padding: 0px;
+  left: 100%;
+  top: -5px;
+}
+.menu-item-has-children:hover .sub-menu > li:hover > ul > li{
+  height: 35px;
+}
+
+/**
+* Text Classes
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+.show-date{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 18px;
+  align-self: center;
+  margin: 0px 5px;
+}
+#top-menu a{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
