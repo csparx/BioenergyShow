@@ -7,7 +7,9 @@
 // Can also be used with $(document).ready()
 jQuery(function ($) {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "slide",
+    controlNav: false,
+    directionNav: false
   });
 });
 </script>

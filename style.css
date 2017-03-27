@@ -116,6 +116,13 @@ body{
 }
 
 /**
+* Slider Classes
+*/
+.flexslider{
+  border: none!important;
+}
+
+/**
 * Text Classes
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
