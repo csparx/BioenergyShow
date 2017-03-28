@@ -22,4 +22,5 @@ jQuery(function ($) {
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" />
     </li>
   </ul>
+  <img src="" />
 </div>
