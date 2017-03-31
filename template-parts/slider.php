@@ -22,5 +22,10 @@ jQuery(function ($) {
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" />
     </li>
   </ul>
-  <img src="" />
+  <div class="center-absolute">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bioshow-logo.png" />
+    <span id="slider-date">April 11-12, 2018</span>
+    <span id="slider-location">Omni Hotel at CNN Center in Atlanta, GA</span>
+  </div>
+
 </div>
