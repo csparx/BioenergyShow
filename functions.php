@@ -25,3 +25,8 @@ include 'inc/theme-options.php';
 register_nav_menus( array(
   'top'    => __( 'Top Menu', 'bioenergyshow' ),
 ) );
+
+/**
+* Allow featured image on post edit pages
+*/
+add_theme_support( 'post-thumbnails', array( 'post','sponsor' ) ); 

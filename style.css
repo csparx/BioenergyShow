@@ -45,12 +45,18 @@ body{
   justify-content: center;
 }
 .one-half{
-  flex-grow: 1;
+  flex: 1;
 }
 .green-line{
   height: 2px;
   background: #007336;
   width: 30%;
+}
+.white-line{
+  height: 2px;
+  background: white;
+  width: 30%;
+  margin-bottom: 25px;
 }
 .action-btn{
   background: #007336;
@@ -199,6 +205,49 @@ body{
 }
 
 /**
+* Latest News Classes
+*/
+.latest-div{
+  display: flex;
+  margin: 10px 20px 10px 0;
+}
+.latest-thumb{
+  flex-grow: 1;
+}
+.latest-excerpt{
+  flex-grow: 1;
+  margin-left: 15px;
+}
+.latest-excerpt a{
+  color: #363636;
+  font-weight: 600;
+}
+.latest-excerpt a:hover{
+  color: #007336;
+}
+.latest-excerpt p{
+  margin-bottom: 0px;
+}
+.lightgrey-line{
+  background-color: #ebebeb;
+  margin-right: 20px;
+}
+
+/**
+* Sponsor Classes
+*/
+.sponsor-container{
+  background: url("assets/img/sponsor-bg.jpg");
+  padding: 50px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sponsors-carousel{
+  height: 175px;
+}
+
+/**
 * Text Classes
 */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -259,4 +308,9 @@ a{
   text-align: left;
   display: table-cell;
   vertical-align: middle;
+}
+.sponsor-title{
+  margin: 20px 0 0 0;
+  color: white;
+  flex: 0 1 100%;
 }
