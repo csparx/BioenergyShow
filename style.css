@@ -25,6 +25,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  overflow: hidden;
 }
 .dark-bg{
   background-color: #363636;
@@ -54,6 +55,7 @@ body{
   height: 2px;
   background: #007336;
   width: 30%;
+  border: none;
 }
 .white-line{
   height: 2px;
@@ -100,6 +102,23 @@ li {
 .widget-container > ul{
   padding: 0;
 }
+.prev{
+  width: 50px;
+  float: left;
+  margin-top: 50px;
+}
+.next{
+  width: 50px;
+  float: left;
+
+}
+.sponsors-carousel > .prev, .sponsors-carousel > .next{
+  margin-top: 50px;
+}
+.speakers-carousel > .prev,.speakers-carousel > .next{
+  margin-top: 200px;
+}
+
 
 
 /**
@@ -182,6 +201,11 @@ li {
   height: 35px;
 }
 
+.cns-toggle {
+  display: none;
+}
+
+
 /**
 * Slider Classes
 */
@@ -211,6 +235,14 @@ li {
   border: none!important;
   margin: 0!important;
 }
+.flexslider > .slick-list > .slick-track > .slick-slide img{
+  width: 100%;
+}
+.flexslider > .slick-list > .slick-track > .slick-slide{
+  height: 800px;
+}
+
+
 
 /**
 * About Classes
@@ -233,6 +265,7 @@ li {
   position: absolute;
   font-size: 14px;
 }
+
 
 /**
 * Latest News Classes
@@ -262,6 +295,9 @@ li {
   background-color: #ebebeb;
   margin-right: 20px;
 }
+.read-more{
+  float: right;
+}
 
 /**
 * Sponsor Classes
@@ -269,9 +305,7 @@ li {
 .sponsor-container{
   background: url("assets/img/sponsor-bg.jpg");
   padding: 30px 50px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   /* Parallax effect */
   background-attachment: fixed;
   background-position: center;
@@ -310,6 +344,10 @@ li {
 .sponsors-carousel > .flex-viewport > .slides > li {
   margin-right: 10px!important;
 }
+.sponsors-carousel > .slick-list{
+  width: 92%;
+  float: left;
+}
 
 /**
 * Speaker Classes
@@ -320,20 +358,18 @@ li {
 .speaker-container{
   background: white;
   padding: 30px 50px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
 }
 .speakers-carousel{
-  height: 485px;
+  text-align: left;
 }
 .black-arrow{
   color: #363636;
 }
-.speakers-carousel > .flex-viewport > .slides > li{
-  width: 200px!important;
-  margin-right: 10px!important;
+.speakers-carousel > .slick-list > .slick-track > .slick-slide{
+  padding: 15px;
 }
+
 
 /**
 * Footer Classes
@@ -353,6 +389,10 @@ li {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   font-weight: 100;
+}
+.speakers-carousel > .slick-list{
+  width: 92%;
+  float: left;
 }
 
 /**

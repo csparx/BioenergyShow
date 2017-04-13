@@ -1,26 +1,10 @@
-<script type="text/javascript">
-  jQuery(function ($) {
-    $('.speakers-carousel').flexslider({
-      animation: "slide",
-      animationLoop : false,
-      slideshowSpeed: 5000,
-      controlNav: false,
-      customDirectionNav: $(".speaker-navigation a"),
-    });
-  });
-</script>
-
-<div class="flex speaker-container">
+<div class="speaker-container">
 
   <h1 class="center-text speaker-title">Speakers</h1>
   <hr class="green-line" />
-  <div class="flex">
-    <div class="speaker-navigation">
-      <a href="#" class="flex-prev black-arrow">&#x3c;</a>
-    </div>
+
     <div class="speakers-carousel">
 
-      <ul class="slides">
         <?php
         global $post;
         $args = array(
@@ -39,26 +23,73 @@
         $count = count($myposts);
         foreach( $myposts as $post ) : setup_postdata( $post );
         ?>
-          <li>
+          <div>
             <?php
             echo get_the_post_thumbnail( $post_id );
             echo the_title('<p class="speaker-name">', '</p>');
             echo the_content();
             ?>
-          </li>
+          </div>
         <?php
         endforeach;
         wp_reset_postdata();
         ?>
-      </ul>
+
     </div>
 
-    <div class="speaker-navigation">
+    <!-- <div class="speaker-navigation">
       <a href="#" class="flex-next black-arrow">&#x3e;</a>
     </div>
-  </div>
+  </div> -->
 
-
+  <div style="clear:both;"></div>
   <a class="green-btn" href="#">View All</a>
 
+
 </div>
+
+
+
+
+<script type="text/javascript">
+  jQuery(function ($) {
+
+    $('.speakers-carousel').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      prevArrow:"<img class='a-left control-c prev slick-prev' src='<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow-black.png'>",
+      nextArrow:"<img class='a-right control-c next slick-next' src='<?php echo get_template_directory_uri(); ?>/assets/img/right-arrow-black.png'>",
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+       // settings: "unslick"
+       // instead of a settings object
+     ]
+    });
+
+  });
+</script>

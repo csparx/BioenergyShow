@@ -6,12 +6,17 @@ function cns_enqueue_style() {
     }
     // load active theme stylesheet in both cases
     wp_enqueue_style( 'theme-stylesheet', get_stylesheet_uri(), false );
+    wp_enqueue_style( 'media-query', get_template_directory_uri() . '/assets/css/media-query.css' );
 
     if( is_home() ){
-      wp_enqueue_script( 'theme-stylesheet', get_template_directory_uri() . '/assets/js/jquery.flexslider-min.js', array( 'jquery' ), true );
-      wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . '/assets/css/flexslider.css', false );
+      //This has too many problems...
+      // wp_enqueue_script( 'theme-stylesheet', get_template_directory_uri() . '/assets/js/jquery.flexslider-min.js', array( 'jquery' ), true );
+      // wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . '/assets/css/flexslider.css', false );
+      wp_enqueue_script( 'theme-stylesheet', get_template_directory_uri() . '/slick/slick.min.js', array( 'jquery' ), true );
+      wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . '/slick/slick.css', false );
+      wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . '/slick/slick-theme.css', false );
     }
-
+    // wp_enqueue_style( 'parent-stylesheet', trailingslashit( get_template_directory_uri() ) . '/assets/css/media-query.css', false );
 }
 
 add_action( 'wp_enqueue_scripts', 'cns_enqueue_style' );
@@ -194,3 +199,17 @@ function cns_widgets_init() {
     ) );
 
 }
+
+/**
+ * Filter the "read more" excerpt string link to the post.
+ *
+ * @param string $more "Read more" excerpt string.
+ * @return string (Maybe) modified "read more" excerpt string.
+ */
+function wpdocs_excerpt_more( $more ) {
+    return sprintf( '...<a class="read-more" href="%1$s">%2$s</a>',
+        get_permalink( get_the_ID() ),
+        __( 'Read More', 'textdomain' )
+    );
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

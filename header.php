@@ -27,7 +27,9 @@
 
       </div><!-- .top-nav .dark-bg -->
 
-      <div class="main-nav primary-bg<?php if( is_home() ){ echo ' center-items'; } ?>">
+      <div id="cnsTopnav" class="main-nav primary-bg<?php if( is_home() ){ echo ' center-items'; } ?>">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">
         <?php
         if ( has_nav_menu( 'top' ) ) :
           wp_nav_menu( array(
@@ -35,11 +37,12 @@
         		'menu_id'         => 'top-menu',
         	) );
         endif;
+
         ?>
+        <span class="cns-toggle">☰</span>
+        </label>
+
       </div>
 
-      <div>
-
-      </div>
 
     </header>
