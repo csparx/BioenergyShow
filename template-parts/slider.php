@@ -5,20 +5,22 @@
 ?>
 <div class="home-slider">
 
-  <div class="flexslider">
-      <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.jpg" />
-      </div>
-      <div>
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" />
-      </div>
-  </div>
-
-  <div class="center-absolute">
+  <div class="center-absolute" id="logodiv">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bioshow-logo.png" />
       <span id="slider-date">April 11-12, 2018</span>
       <span id="slider-location">Omni Hotel at CNN Center in Atlanta, GA</span>
   </div>
+
+  <div class="flexslider">
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide1.jpg" />
+    </div>
+    <div>
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/slide2.jpg" />
+    </div>
+  </div>
+
+
 
 </div>
 
@@ -34,5 +36,14 @@ jQuery(function ($) {
     fade: true,
     arrows: false,
   });
+  $('#checkbox1').click(function(){
+    if (this.checked) {
+      var d = document.getElementById("logodiv");
+      d.className += " mobile-logo";
+    } else {
+      var d = document.getElementById("logodiv");
+      d.className = "center-absolute";
+    }
+  })
 });
 </script>

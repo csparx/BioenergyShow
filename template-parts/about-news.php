@@ -1,4 +1,4 @@
-<div class="flex">
+<div class="flex wrap-true">
   <div class="one-half">
     <h1 class="center-text cat-title">About Conference & Expo</h1>
     <hr class="green-line" />
@@ -29,11 +29,11 @@
         <div class="latest-div">
 
           <div class="latest-thumb">
-            <?php echo get_the_post_thumbnail( $post_id, 'thumbnail' ); ?>
+            <?php echo get_the_post_thumbnail( $post_id, 'medium' ); ?>
           </div>
 
           <div class="latest-excerpt">
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <a class="news-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <?php the_excerpt(); ?>
 
           </div>
