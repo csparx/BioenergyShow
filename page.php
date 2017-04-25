@@ -1,4 +1,3 @@
-<?php /* Template Name: Full Width */ ?>
 <?php
 get_header();
 
@@ -18,15 +17,24 @@ while ( have_posts() ) : the_post();
 
 <div class="page-container">
   <?php custom_breadcrumbs(); ?>
-  <div class="fullwidth-content">
+  <div class="page-content">
     <?php the_content(); ?>
   </div>
-</div>
-
 
 <?php
 endwhile; // End of the loop.
+?>
+<div class="page-sidebar">
+  <?php if ( is_active_sidebar( 'sidebar-widget-area' ) ) { ?>
+    <ul id="sidebar">
+      <?php dynamic_sidebar( 'sidebar-widget-area' ); ?>
+    </ul>
+  <?php } ?>
+</div>
+<div style="clear:both;"></div>
 
+</div>
+<?php
 get_footer();
 ?>
 

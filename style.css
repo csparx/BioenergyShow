@@ -19,7 +19,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 9px 0px;
+  padding: 9px 125px 9px 0px;
 }
 .main-nav{
   display: flex;
@@ -118,6 +118,65 @@ li {
 .speakers-carousel > .prev,.speakers-carousel > .next{
   margin-top: 200px;
 }
+
+
+/*
+** Page Templates
+*/
+/* Breadcrumbs */
+#breadcrumbs{
+    list-style:none;
+    margin:10px 0;
+    overflow:hidden;
+}
+
+#breadcrumbs li{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:15px;
+}
+
+#breadcrumbs .separator{
+    font-size:18px;
+    font-weight:100;
+    color:#ccc;
+}
+.bread-link{
+  color: grey;
+}
+.bread-link:hover{
+  color: #029446;
+}
+
+/* Full Width Template */
+.page-container{
+  width: 100%;
+}
+.page-sidebar{
+  width: 30%;
+  float: left;
+  border-left: 1px #e6e6e6 solid;
+}
+.page-content{
+  margin: 50px;
+  width: 60%;
+  float: left;
+}
+.fullwidth-content{
+  margin: 50px;
+  width: 90%;
+}
+.page-title{
+  position: absolute;
+  color: white;
+  left: 40px;
+  margin-top: 75px;
+}
+.full-banner{
+  width: 100%;
+  height: 200px;
+}
+
 .fade-in{
   -webkit-animation: fade-in 2s ease;
   -moz-animation: fade-in ease-in-out 2s both;
