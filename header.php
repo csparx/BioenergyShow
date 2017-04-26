@@ -30,7 +30,7 @@
 
       </div><!-- .top-nav .dark-bg -->
 
-      <nav>
+      <nav class="nav-main">
         <div class="nav-container">
         <a id="resp-menu" class="responsive-menu" href="#"> Menu ☰</a>
         <ul class="menu">

@@ -15,11 +15,15 @@ Text Domain: bioenergyshow
 body{
   margin: 0px;
 }
+.nav-main{
+  display: block;
+}
 .top-nav{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 9px 125px 9px 0px;
+  padding: 9px 100px 9px 40px;
+  margin-left: 37%;
 }
 .main-nav{
   display: flex;
@@ -128,6 +132,7 @@ li {
     list-style:none;
     margin:10px 0;
     overflow:hidden;
+    padding-left: 0!important;
 }
 
 #breadcrumbs li{
@@ -151,6 +156,7 @@ li {
 /* Full Width Template */
 .page-container{
   width: 100%;
+  margin-left: 100px;
 }
 .page-sidebar{
   width: 30%;
@@ -169,8 +175,8 @@ li {
 .page-title{
   position: absolute;
   color: white;
-  left: 40px;
-  margin-top: 75px;
+  left: 100px;
+  margin-top: 90px;
 }
 .full-banner{
   width: 100%;
@@ -233,6 +239,9 @@ li {
 }
 #header-logo{
   float: left;
+  height: 130px;
+  padding: 15px 0;
+  margin-left: 100px
 }
 .logo-container{
   background: white;
@@ -240,14 +249,16 @@ li {
   height: auto;
   float: left;
 }
+header{
+  /*margin: 0 100px;*/
+}
 
 /**
 * Main Nav
 */
 nav {
-    display: block;
-    /*margin-top: 100px;*/
-    background: #007336;
+    /*display: block;
+    background: #007336;*/
 }
 .nav-container{
   display: table;
@@ -274,7 +285,7 @@ nav {
     text-decoration: none;
     padding: 20px 15px;
     display: block;
-    color: #fff;
+    color: #363636;
     transition: all 0.2s ease-in-out 0s;
 }
 
@@ -388,6 +399,7 @@ nav {
 
 a.homer {
     background: #029446;
+    color: white!important;
 }
 
 
