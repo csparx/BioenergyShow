@@ -22,8 +22,11 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 9px 100px 9px 40px;
+  padding: 9px 40px;
+}
+.main-header{
   margin-left: 37%;
+  padding: 9px 100px 9px 40px;
 }
 .main-nav{
   display: flex;
@@ -130,7 +133,7 @@ li {
 /* Breadcrumbs */
 #breadcrumbs{
     list-style:none;
-    margin:10px 0;
+    margin: 20px 0 20px 100px;
     overflow:hidden;
     padding-left: 0!important;
 }
@@ -161,15 +164,14 @@ li {
 .page-sidebar{
   width: 30%;
   float: left;
-  border-left: 1px #e6e6e6 solid;
+  /*border-left: 1px #e6e6e6 solid;*/
 }
 .page-content{
-  margin: 50px;
+  /*margin: 50px;*/
   width: 60%;
   float: left;
 }
 .fullwidth-content{
-  margin: 50px;
   width: 90%;
 }
 .page-title{
@@ -197,7 +199,41 @@ li {
 @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 
-
+/*
+* Category Page
+*/
+a.prev.page-numbers {
+    width: auto;
+    float: none;
+    margin: auto;
+}
+.blog-excerpt{
+  margin: 0 20px;
+  float: left;
+  width: 75%;
+}
+.blog-thumb{
+  float: left;
+}
+.blog-container{
+  width: 60%;
+  float: left;
+}
+.pagination{
+  margin: 20px 0;
+}
+h3.entry-title {
+  margin-top: 0;
+}
+.blog-hr{
+  border: 1px #e6e6e6 solid;
+}
+.blog-link{
+  color:#363636;
+}
+.blog-link:hover{
+  color:#029446;
+}
 
 /**
 * Header Classes
@@ -209,6 +245,7 @@ li {
 }
 #top-nav-search{
   margin: 0 0 0 15px;
+  height: 23px;
 }
 .social-icon{
   margin: 0px 3px;
@@ -514,6 +551,9 @@ a.homer {
   padding: 5px 10px;
   font-size: 14px;
   margin: 10px;
+}
+.read-more:hover{
+  background: #029446;
 }
 .news-title{
   color: #007336!important;

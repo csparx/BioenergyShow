@@ -14,29 +14,53 @@ get_header();
 <?php endif; ?>
 
 
+
+<?php custom_breadcrumbs(); ?>
 <div class="page-container">
-  <?php custom_breadcrumbs(); ?>
-  <div class="fullwidth-content">
+  <?php
+  if ( have_posts() ) :
+  ?>
+
+    <div class="blog-container">
+
     <?php
-    if ( have_posts() ) :
+    /* Start the Loop */
+    while ( have_posts() ) : the_post(); ?>
 
-      /* Start the Loop */
-      while ( have_posts() ) : the_post();
+    <div class="blog-post">
+      <div class="blog-thumb">
+        <?php echo get_the_post_thumbnail( $post_id, 'thumbnail' ); ?>
+      </div>
+      <div class="blog-excerpt">
+        <a class="blog-link" href="<?php the_permalink(); ?>"><?php the_title( '<h3 class="entry-title">', '</h3>' ); ?></a>
+        <?php the_excerpt();?>
 
-      the_title( '<h3 class="entry-title">', '</h3>' );
+      </div>
+    </div>
 
-      endwhile;
+    <div style="clear:both;"></div>
+    <hr class="blog-hr"/>
 
-      the_posts_pagination();
+    <?php
+    endwhile;
 
-    else :
-
-      // get_template_part( 'template-parts/post/content', 'none' );
-
-    endif;
+    the_posts_pagination();
     ?>
-  </div>
+    </div>
+
+  <?php
+  else :
+
+    // get_template_part( 'template-parts/post/content', 'none' );
+
+  endif;
+
+  get_sidebar();
+
+  ?>
 </div>
+<div style="clear:both;"></div>
+
 <?php
 get_footer();
 ?>
