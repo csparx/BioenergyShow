@@ -13,8 +13,6 @@ get_header();
 </div>
 <?php endif; ?>
 
-
-
 <?php custom_breadcrumbs(); ?>
 <div class="page-container">
   <?php

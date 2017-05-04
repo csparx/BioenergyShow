@@ -34,7 +34,7 @@
           <li><a class="homer" href="#"> Home</a></li>
           <li><a href="#"> Register</a></li>
           <li><a href="#"> About</a></li>
-          <li><a href="#"> Blog</a></li>
+          <li><a href="<?php echo get_home_url(); ?>/category/blog/"> Blog</a></li>
           <li><a href="#"> Exhibitor Sponsors</a></li>
           <li><a href="#"> Attendee Info</a>
             <ul class="sub-menu">
