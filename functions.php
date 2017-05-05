@@ -8,6 +8,8 @@ function cns_enqueue_style() {
     // load active theme stylesheet in both cases
     wp_enqueue_style( 'theme-stylesheet', get_stylesheet_uri(), false );
     wp_enqueue_style( 'media-query', get_template_directory_uri() . '/assets/css/media-query.css' );
+    wp_enqueue_style( 'list-nav', get_template_directory_uri() . '/assets/css/listnav.css' );
+    wp_enqueue_script( 'jquery-listnav', get_template_directory_uri() . '/assets/js/jquery-listnav.min.js', array( 'jquery' ), true );
 
     if( is_home() ){
       //This has too many problems...

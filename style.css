@@ -159,7 +159,6 @@ li {
 /* Full Width Template */
 .page-container{
   width: 100%;
-  margin-left: 100px;
 }
 .page-sidebar{
   width: 30%;
@@ -218,6 +217,7 @@ a.prev.page-numbers {
 .blog-container{
   width: 60%;
   float: left;
+  margin-left: 100px;
 }
 .pagination{
   margin: 20px 0;
@@ -236,6 +236,26 @@ h3.entry-title {
 }
 #twitter-widget-0{
   margin: 20px 0!important;
+}
+
+/* Sponsor Page */
+.sponsor-posts-contain{
+  flex-wrap: wrap;
+  margin-left: 100px
+}
+.sponsor-item{
+  margin: 20px;
+  width: 250px;
+}
+.sponsor-logo{
+  width: 100%;
+  margin-bottom: 10px;
+}
+#sponsors-nav{
+  margin-left: 100px;
+}
+.listNavShow{
+  display: initial!important;
 }
 
 /**
