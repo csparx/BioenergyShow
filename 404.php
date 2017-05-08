@@ -1,25 +1,25 @@
 <?php
-get_header();
+/**
+ * The template for displaying 404 pages (not found)
+ */
 
-?>
+get_header(); ?>
 
-<?php
-while ( have_posts() ) : the_post();
-?>
 <div id="banner-load">
   <h1 class="page-title">
-    <?php the_title(); ?>
+    Oops! That page can&rsquo;t be found.
   </h1>
 </div>
 
 <div class="page-container">
   <?php custom_breadcrumbs(); ?>
   <div class="page-content">
-    <?php the_content(); ?>
+    <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyseventeen' ); ?></p>
+
+    <?php get_search_form(); ?>
   </div>
 
 <?php
-endwhile; // End of the loop.
 get_sidebar();
 ?>
 <div style="clear:both;"></div>

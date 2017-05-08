@@ -12,6 +12,14 @@ Text Domain: bioenergyshow
 /**
 * Foundation Classes
 */
+html,body
+{
+    width: 100%;
+    /*height: 100%;*/
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
 body{
   margin: 0px;
 }
@@ -169,6 +177,7 @@ li {
   /*margin: 50px;*/
   width: 60%;
   float: left;
+  margin-left: 100px;
 }
 .fullwidth-content{
   width: 90%;
@@ -258,6 +267,30 @@ h3.entry-title {
   display: initial!important;
 }
 
+/* Speaker Page */
+.speaker-posts-contain{
+  flex-wrap: wrap;
+  margin-left: 100px
+}
+.speaker-item{
+  margin: 20px;
+  width: 250px;
+}
+.speaker-pic{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Contact Form */
+.wpcf7-form-control{
+  height: 25px;
+  min-width: 35%;
+}
+.wpcf7-textarea {
+  width: 50%;
+  height: 200px;
+}
+
 /**
 * Header Classes
 */
@@ -265,6 +298,7 @@ h3.entry-title {
   background: #ffffff;
   padding: 5px;
   height: 19px;
+  vertical-align: middle;
 }
 #top-nav-search{
   margin: 0 0 0 15px;
