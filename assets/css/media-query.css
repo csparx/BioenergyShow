@@ -1,14 +1,53 @@
-@media only screen and (max-width: 1220px){
+@media only screen and (max-width: 1434px){
+  .main-header {
+    margin-left: 24%;
+  }
+
+}
+
+@media only screen and (max-width: 1287px){
+
+  /* Header */
+  .main-header {
+    margin-left: auto;
+    padding: 5px 0px;
+    position: absolute;
+    width: 100%;
+  }
+  #magnifying-glass{
+    margin-right: 28px;
+  }
+  .logo-container{
+    margin-top: 50px;
+    width: 100%;
+  }
+  #header-logo {
+    float: none;
+    height: 150px;
+    padding: 15px 0;
+    display: block;
+    margin: auto;
+  }
 
   /* Slider */
   .flexslider > .slick-list > .slick-track > .slick-slide img{
     width: auto;
     height: 100%;
   }
+
+  /* Blog */
+  .blog-excerpt{
+    width: 68%;
+  }
+
 }
 
-@media screen and (max-device-width: 1000px){
+@media screen and (max-device-width: 1010px){
   /* Foundation */
+  #breadcrumbs{
+    margin: 20px 0 25px 40px;
+    font-size: 18px;
+  }
   .wrap-true{
     flex-wrap: wrap;
   }
@@ -29,6 +68,9 @@
   }
   .about-btn{
     font-size: 24px;
+  }
+  .page-title{
+    left: 40px;
   }
 
   /* Main Nav */
@@ -69,10 +111,16 @@
   .sponsors-carousel > .prev, .sponsors-carousel > .next{
     display: none!important;
   }
+  #sponsors-nav{
+    font-size: 25px;
+  }
 
   /* Speaker */
   .speakers-carousel > .prev, .speakers-carousel > .next{
     display: none!important;
+  }
+  .speaker-posts-contain{
+    margin-left: 40px;
   }
 
   /* Footer */
@@ -94,6 +142,22 @@
   .copyright{
     font-size: 12px;
     flex: 1 100%;
+  }
+
+  /* Blog */
+  .blog-container {
+    width: 100%;
+    margin-left: 40px;
+  }
+  .page-sidebar{
+    width: 100%;
+  }
+  #text-5, #text-6{
+    width: 47%;
+    float: left;
+  }
+  #twitter-widget-0{
+    height: 500px!important;
   }
 }
 
@@ -272,6 +336,13 @@
   }
   .main-header{
     background: none!important;
+    width: 60%;
+    float: right;
+    position: relative;
+  }
+  .logo-container {
+    margin-top: 0px;
+    width: auto;
   }
 
   /* About */
@@ -322,6 +393,9 @@
   .speakers-carousel{
     font-size: 22px;
   }
+  .speaker-item{
+    font-size: 22px;
+  }
 
   /* Blog */
   .blog-container{
@@ -341,5 +415,6 @@
     font-size: 25px;
     margin-left: 20px;
   }
+
 
 }

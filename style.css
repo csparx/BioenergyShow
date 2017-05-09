@@ -23,6 +23,12 @@ html,body
 body{
   margin: 0px;
 }
+input,textarea{
+  border: 1px solid grey;
+}
+#searchsubmit{
+  border: 1px;
+}
 .nav-main{
   display: block;
 }
@@ -180,7 +186,7 @@ li {
   margin-left: 100px;
 }
 .fullwidth-content{
-  width: 90%;
+  width: 100%;
 }
 .page-title{
   position: absolute;

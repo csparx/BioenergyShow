@@ -17,7 +17,7 @@
       <div class="logo-container">
         <img id="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/bioshow-logo-150x.png" />
       </div>
-      
+
   		<div class="nav-padding top-nav dark-bg main-header<?php if( is_home() ){ echo ' center-items'; } ?>">
         <span class="show-date"><?php echo get_option('show_date'); ?></span>
         <a href="<?php echo get_option('facebook_link'); ?>"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/social/facebook.png"></a>
@@ -108,38 +108,5 @@
 
         });
       </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <?php /*
-      <div id="cnsTopnav" class="main-nav primary-bg<?php if( is_home() ){ echo ' center-items'; } ?>">
-        <input type="checkbox" id="checkbox1" />
-        <label for="checkbox1">
-        <?php
-        if ( has_nav_menu( 'top' ) ) :
-          wp_nav_menu( array(
-        		'theme_location'  => 'top',
-        		'menu_id'         => 'top-menu',
-        	) );
-        endif;
-
-        ?>
-        <span class="cns-toggle">☰</span>
-        </label>
-      </div>
-      */ ?>
-
 
     </header>
