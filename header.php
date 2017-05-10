@@ -15,7 +15,7 @@
   <body>
     <header>
       <div class="logo-container">
-        <img id="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/bioshow-logo-150x.png" />
+        <a href="<?php echo home_url(); ?>"><img id="header-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/bioshow-logo-150x.png" /></a>
       </div>
 
   		<div class="nav-padding top-nav dark-bg main-header<?php if( is_home() ){ echo ' center-items'; } ?>">
@@ -25,66 +25,27 @@
         <a href="<?php echo get_option('newsletter_link'); ?>"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/social/newsletter.png"></a>
         <a href="<?php echo get_option('rss_link'); ?>"><img class="social-icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/social/rss.png"></a>
         <!-- Need to insert search form -->
-        <form action="<?php echo get_home_url(); ?>/" method="get">
+        <form id="top-search-bar" action="<?php echo get_home_url(); ?>/" method="get">
           <input id="top-nav-search" type="text" name="s" placeholder="Search..." value="<?php the_search_query(); ?>" />
           <input id="magnifying-glass" type="image" src="<?php echo get_template_directory_uri(); ?>/assets/img/magnifying-glass.png" />
-          <!-- <img id="magnifying-glass" src="<?php/* echo get_template_directory_uri(); */ ?>/assets/img/magnifying-glass.png"> -->
+
         </form>
 
 
       </div><!-- .top-nav .dark-bg -->
 
       <nav class="nav-main">
+
         <div class="nav-container">
-        <a id="resp-menu" class="responsive-menu" href="#"> Menu ☰</a>
-        <ul class="menu">
-          <li><a class="homer" href="#"> Home</a></li>
-          <li><a href="#"> Register</a></li>
-          <li><a href="#"> About</a></li>
-          <li><a href="<?php echo get_home_url(); ?>/category/blog/"> Blog</a></li>
-          <li><a href="#"> Exhibitor Sponsors</a></li>
-          <li><a href="#"> Attendee Info</a>
-            <ul class="sub-menu">
-              <li><a href="#"> Hotel Info</a></li>
-              <li><a href="<?php echo get_home_url(); ?>/speakers-18/"> Speakers</a></li>
-              <li><a href="#"> Agenda</a></li>
-              <li><a href="#"> Program</a></li>
-            </ul>
-          </li>
-          <li><a href="#"> Exhibitor Info</a>
-            <ul class="sub-menu">
-              <li><a href="#"> Schedule (PDF)</a></li>
-              <li><a href="#"> Brochure (PDF)</a></li>
-              <li><a href="#"> Promotional Media</a></li>
-            </ul>
-          </li>
-          <li><a href="#"> 2010-2014</a>
-            <ul class="sub-menu">
-              <li><a href="#"> BIO 2014</a>
-                <ul>
-                  <li><a href="#"> News</a></li>
-                  <li><a href="#"> Speakers</a></li>
-                  <li><a href="#"> Schedule</a></li>
-                  <li><a href="#"> Video Chronicles</a></li>
-                  <li><a href="#"> Live Broadcasts</a></li>
-                </ul>
-              </li>
-              <li><a href="#"> BIO 2012</a>
-                <ul>
-                  <li><a href="#"> News</a></li>
-                  <li><a href="#"> Gallery</a></li>
-                  <li><a href="#"> Live Broadcasts</a></li>
-                </ul>
-              </li>
-              <li><a href="#"> BIO 2010</a>
-                <ul>
-                  <li><a href="#"> Gallery</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#"> Contact</a></li>
-        </ul>
+          <a id="resp-menu" class="responsive-menu" href="#"> Menu ☰</a>
+          <?php
+          $args = array(
+            'menu'              => 'Top Menu',
+            'menu_class'        => 'menu',
+            'container'         => '',
+          );
+          wp_nav_menu( $args );
+          ?>
         </div>
 
       </nav>
@@ -110,3 +71,5 @@
       </script>
 
     </header>
+
+    

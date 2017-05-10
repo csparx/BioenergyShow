@@ -19,7 +19,7 @@
       <?php
       global $post;
       $args = array(
-        'posts_per_page'  => 3,
+        'posts_per_page'  => 2,
         'category_name'   => array('bio-2018','bio-2016')
       );
       $myposts = get_posts($args);

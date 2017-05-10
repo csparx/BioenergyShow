@@ -35,15 +35,9 @@ jQuery(function ($) {
     infinite: true,
     fade: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
   });
-  $('#checkbox1').click(function(){
-    if (this.checked) {
-      var d = document.getElementById("logodiv");
-      d.className += " mobile-logo";
-    } else {
-      var d = document.getElementById("logodiv");
-      d.className = "center-absolute";
-    }
-  })
+
 });
 </script>

@@ -26,6 +26,10 @@ body{
 input,textarea{
   border: 1px solid grey;
 }
+.alignright{
+  float: right;
+  margin: 0 0 20px 20px;
+}
 #searchsubmit{
   border: 1px;
 }
@@ -186,7 +190,7 @@ li {
   margin-left: 100px;
 }
 .fullwidth-content{
-  width: 100%;
+  margin: 40px 100px;
 }
 .page-title{
   position: absolute;
@@ -256,7 +260,7 @@ h3.entry-title {
 /* Sponsor Page */
 .sponsor-posts-contain{
   flex-wrap: wrap;
-  margin-left: 100px
+  /*margin-left: 100px*/
 }
 .sponsor-item{
   margin: 20px;
@@ -267,7 +271,9 @@ h3.entry-title {
   margin-bottom: 10px;
 }
 #sponsors-nav{
-  margin-left: 100px;
+  /*margin-left: 100px;*/
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 .listNavShow{
   display: initial!important;
@@ -276,7 +282,7 @@ h3.entry-title {
 /* Speaker Page */
 .speaker-posts-contain{
   flex-wrap: wrap;
-  margin-left: 100px
+  /*margin-left: 100px*/
 }
 .speaker-item{
   margin: 20px;
@@ -335,7 +341,7 @@ h3.entry-title {
 .menu-item{
   list-style-type: none;
   /*margin: 0px 10px;*/
-  padding: 30px 15px;
+  /*padding: 30px 15px;*/
 }
 #header-logo{
   float: left;
@@ -497,7 +503,7 @@ nav {
     text-decoration: none;
 }
 
-a.homer {
+.homer a{
     background: #029446;
     color: white!important;
 }
@@ -745,6 +751,8 @@ a{
   font-size: 39px;
   font-weight: bold;
   text-align: center;
+  background: rgba(54, 54, 54, .9);
+  margin-top: 15px;
 }
 #slider-location{
   position: relative;
@@ -754,6 +762,7 @@ a{
   font-size: 39px;
   font-weight: bold;
   text-align: center;
+  background: rgba(54, 54, 54, .9);
 }
 .show-date{
   font-weight: lighter;
@@ -773,13 +782,13 @@ a{
   content:"\25be";
   color: white;
 }
-.sub-menu > .menu-item-has-children:after{
+/*.sub-menu > .menu-item-has-children:after{
   content:"\25b8";
   color: white;
   text-align: left;
   display: table-cell;
   vertical-align: middle;
-}
+}*/
 .sponsor-title{
   margin: 20px 0 0 0;
   color: white;
