@@ -10,7 +10,7 @@ function cns_enqueue_style() {
     wp_enqueue_style( 'media-query', get_template_directory_uri() . '/assets/css/media-query.css' );
     wp_enqueue_style( 'list-nav', get_template_directory_uri() . '/assets/css/listnav.css' );
     wp_enqueue_script( 'jquery-listnav', get_template_directory_uri() . '/assets/js/jquery-listnav.min.js', array( 'jquery' ), true );
-    wp_enqueue_script( 'jquery-headerimage', get_template_directory_uri() . '/assets/js/jquery-headerimage.js', array( 'jquery' ), true );
+    wp_enqueue_script( 'jquery-headerimage', get_template_directory_uri() . '/assets/js/jquery.headerimage.js', array( 'jquery' ), true );
 
     if( is_home() ){
       //This has too many problems...
