@@ -175,6 +175,15 @@ li {
 }
 
 /* Full Width Template */
+.twoimg{
+  display: inline-flex;
+}
+div.twoimg > img {
+  margin: 10px;
+  width: calc(50% - 20px);
+  float: left;
+  height: 100%;
+}
 .page-container{
   width: 100%;
 }
@@ -537,12 +546,14 @@ nav {
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 15%;
+  /*margin-top: 15%;*/
+  margin-top: 3%;
 }
 .center-absolute img {
   position: relative;
   display: block;
   margin: 0 auto;
+  width: 350px;
 }
 .center-absolute h1{
   display: table-cell;
@@ -554,9 +565,11 @@ nav {
 }
 .flexslider > .slick-list > .slick-track > .slick-slide img{
   width: 100%;
+  height: 100%;
 }
 .flexslider > .slick-list > .slick-track > .slick-slide{
-  height: 800px;
+  /*height: 800px;*/
+  height: 550px;
 }
 
 
@@ -633,7 +646,7 @@ nav {
 */
 .sponsor-container{
   background: url("assets/img/sponsor-bg.jpg");
-  padding: 30px 50px;
+  padding: 30px 0px;
   text-align: center;
   /* Parallax effect */
   background-attachment: fixed;
@@ -686,7 +699,7 @@ nav {
 }
 .speaker-container{
   background: white;
-  padding: 30px 50px;
+  padding: 30px 0px;
   text-align: center;
 }
 .speakers-carousel{
@@ -748,7 +761,7 @@ a{
   display: block;
   color: white;
   text-shadow: 2px 2px 2px #363636;
-  font-size: 39px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
   background: rgba(54, 54, 54, .9);
@@ -759,7 +772,7 @@ a{
   display: block;
   color: white;
   text-shadow: 2px 2px 2px #363636;
-  font-size: 39px;
+  font-size: 34px;
   font-weight: bold;
   text-align: center;
   background: rgba(54, 54, 54, .9);

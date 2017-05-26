@@ -43,7 +43,7 @@
   </div> -->
 
   <div style="clear:both;"></div>
-  <a class="green-btn" href="#">View All</a>
+  <a class="green-btn" href="<?php echo home_url(); ?>/bio-2018/speakers/">View All</a>
 
 
 </div>
@@ -55,9 +55,9 @@
   jQuery(function ($) {
 
     $('.speakers-carousel').slick({
-      slidesToShow: 6,
+      slidesToShow: 5,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 3000,
       prevArrow:"<img class='a-left control-c prev slick-prev' src='<?php echo get_template_directory_uri(); ?>/assets/img/left-arrow-black.png'>",
       nextArrow:"<img class='a-right control-c next slick-next' src='<?php echo get_template_directory_uri(); ?>/assets/img/right-arrow-black.png'>",

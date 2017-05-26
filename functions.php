@@ -10,7 +10,7 @@ function cns_enqueue_style() {
     wp_enqueue_style( 'media-query', get_template_directory_uri() . '/assets/css/media-query.css' );
     wp_enqueue_style( 'list-nav', get_template_directory_uri() . '/assets/css/listnav.css' );
     wp_enqueue_script( 'jquery-listnav', get_template_directory_uri() . '/assets/js/jquery-listnav.min.js', array( 'jquery' ), true );
-    wp_enqueue_script( 'jquery-headerimage', get_template_directory_uri() . '/assets/js/jquery.headerimage.js', array( 'jquery' ), true );
+    // wp_enqueue_script( 'jquery-headerimage', get_template_directory_uri() . '/assets/js/jquery.headerimage.js', array( 'jquery' ), true );
 
     if( is_home() ){
       //This has too many problems...
@@ -462,3 +462,9 @@ function wpdocs_excerpt_more( $more ) {
     );
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+/**
+* Adds support for featured thumbnail in sponsor & speaker post type
+**/
+add_theme_support( 'post-thumbnails', array( 'cns_sponsor' ) );
+add_theme_support( 'post-thumbnails', array( 'cns_speaker' ) );

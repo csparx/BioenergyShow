@@ -80,13 +80,13 @@
 
     </div>
 
-  <a class="white-btn" href="#">View All</a>
+  <a class="white-btn" href="<?php echo home_url(); ?>/exhibitor-sponsors/">View All</a>
 
 </div>
 <script type="text/javascript">
   jQuery(function ($) {
     $('.sponsors-carousel').slick({
-      slidesToShow: 7,
+      slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
