@@ -1,6 +1,6 @@
 <div class="speaker-container">
 
-  <h1 class="center-text speaker-title">Speakers</h1>
+  <a href="<?php home_url(); ?>/bio-2018/speakers/"><h1 class="center-text speaker-title">Speakers</h1></a>
   <hr class="green-line" />
 
     <div class="speakers-carousel">

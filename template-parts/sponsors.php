@@ -1,6 +1,6 @@
 <div class="sponsor-container">
 
-  <h1 class="center-text sponsor-title">Sponsors</h1>
+  <a href="<?php home_url(); ?>/exhibitor-sponsors/"><h1 class="center-text sponsor-title">Sponsors</h1></a>
   <hr class="white-line" />
 
     <div class="sponsors-carousel">

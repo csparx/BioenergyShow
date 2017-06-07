@@ -1,6 +1,6 @@
 <div class="flex wrap-true">
   <div class="one-half">
-    <h1 class="center-text cat-title">About Conference & Expo</h1>
+    <a href="<?php home_url(); ?>/about-the-conference-expo/"><h1 class="center-text cat-title">About Conference & Expo</h1></a>
     <hr class="green-line" />
     <img class="about-pic" src="<?php echo get_template_directory_uri();?>/assets/img/about.jpg" />
     <div class="grey-bg about">
@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="one-half">
-    <h1 class="center-text cat-title">Latest News</h1>
+    <a href="<?php home_url(); ?>/category/blog/"><h1 class="center-text cat-title">Latest News</h1></a>
     <hr class="green-line" />
       <?php
       global $post;
