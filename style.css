@@ -269,7 +269,7 @@ h3.entry-title {
 /* Sponsor Page */
 /* Remove when more sponsors are entered */
 .sponsors-carousel.slick-initialized.slick-slider {
-    margin-left: 60px;
+    /*margin-left: 60px;*/
 }
 /* END Removal */
 

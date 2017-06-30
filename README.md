@@ -1,1 +1,2 @@
 # BioenergyShow
+[bioenergyshow.com](http://www.bioenergyshow.com) was created for the Wood Bioenergy Conference & Expo. The website provides attendees and exhibitors with information regarding the show including show sponsors, speakers, news, etc. The site was built with a custom theme on the Wordpress CMS. Created with cross-browser and mobile integration in mind, [bioenergyshow.com](http://www.bioenergyshow.com)  includes custom post types for speakers and sponsors for better organizaiton.
