@@ -45,6 +45,12 @@
     width: 68%;
   }
 
+  /* Agenda */
+  .agenda-cols{
+    column-count: 3;
+    column-gap: 40px;
+  }
+
 }
 
 @media screen and (max-device-width: 1010px){
@@ -163,6 +169,14 @@
   }
   #twitter-widget-0{
     height: 500px!important;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  /* Agenda */
+  .agenda-cols{
+    column-count: 2;
+    column-gap: 40px;
   }
 }
 
@@ -403,6 +417,12 @@
   }
   .speaker-item{
     font-size: 22px;
+  }
+
+  /* Agenda */
+  .agenda-cols{
+    column-count: 1;
+    column-gap: 40px;
   }
 
   /* Blog */

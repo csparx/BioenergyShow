@@ -525,11 +525,6 @@ nav {
 
 
 
-
-
-
-
-
 /**
 * Slider Classes
 */
@@ -718,6 +713,12 @@ nav {
   padding: 15px;
 }
 
+/* Agenda */
+.agenda-cols{
+  column-count: 4;
+  column-gap: 40px;
+}
+
 
 /**
 * Footer Classes
@@ -801,13 +802,6 @@ a{
   content:"\25be";
   color: white;
 }
-/*.sub-menu > .menu-item-has-children:after{
-  content:"\25b8";
-  color: white;
-  text-align: left;
-  display: table-cell;
-  vertical-align: middle;
-}*/
 .sponsor-title{
   margin: 20px 0 0 0;
   color: white;
